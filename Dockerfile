@@ -14,5 +14,8 @@ RUN git clone https://github.com/getodk/central-backend.git .
 WORKDIR /app/server
 RUN npm install
 
+# Expose port 80 (or the port your app listens on)
+EXPOSE 80
+
 # Start ODK Central server (for debugging)
-CMD ["npm", "run"]
+CMD ["npm", "run", "start"]   # Ensure the start script in package.json runs the server
