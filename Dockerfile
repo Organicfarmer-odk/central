@@ -1,4 +1,5 @@
-FROM node:18
+# Use Node.js 22 base image
+FROM node:22
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y git curl
