@@ -14,5 +14,5 @@ RUN git clone https://github.com/getodk/central-backend.git .
 WORKDIR /app/server
 RUN npm install
 
-# Start the ODK Central server
-CMD ["npm", "start"]
+# Start ODK Central server (for debugging)
+CMD ["npm", "run"]
